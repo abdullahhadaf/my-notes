@@ -1,7 +1,9 @@
 package com.a3non.mynotes;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -45,9 +47,10 @@ public class AddActivity extends AppCompatActivity {
             }
         });
         ExitaddJAVA.setOnClickListener(new View.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
             @Override
             public void onClick(View v) {
-                finish();
+                finishAffinity();
             }
         });
     }
