@@ -11,11 +11,12 @@
 
     <Button
         android:id="@+id/btn"
-        android:layout_width="100dp"
+        android:layout_width="70dp"
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
-        android:layout_gravity="left"
+        android:layout_marginTop="40dp"
         android:layout_margin="40dp"
+        android:layout_marginBottom="40dp"
         android:background="@drawable/click_button"
         android:paddingTop="1dp"
         android:paddingBottom="1dp"
@@ -33,22 +34,7 @@
         android:background="#E8EAF6"
         android:paddingTop="10dp"></ListView>
 
-    <Button
-        android:id="@+id/exitXML"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:layout_alignBottom="@+id/btn"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginEnd="54dp"
-        android:layout_marginRight="54dp"
-        android:layout_marginBottom="0dp"
-        android:background="@drawable/click_button"
-        android:text="EXIT"
-        android:textAllCaps="false"
-        android:textColor="@android:color/holo_red_dark"
-        android:textSize="18dp"
-        android:textStyle="bold" />
+
 
 
 </RelativeLayout>

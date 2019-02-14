@@ -35,7 +35,7 @@ public class Houl extends AppCompatActivity {
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String developerName = "abdullah";     //ضع هنا اسم المبرمج الاسم المستخدم في المتجر
+                String developerName = "abdullah/hadaf";     //ضع هنا اسم المبرمج الاسم المستخدم في المتجر
                 try {
                     startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://search?q="+developerName)));
                 } catch (android.content.ActivityNotFoundException anfe) {

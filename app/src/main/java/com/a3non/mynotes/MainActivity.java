@@ -18,21 +18,22 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     ListView listView;
-    Button button,ExitJAVA;
+    Button button;
     MyHelper db;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        listView=(ListView) findViewById(R.id.list1);
-        db=new MyHelper(this);
+        listView = (ListView) findViewById(R.id.list1);
 
-        button=(Button) findViewById(R.id.btn);
-        ExitJAVA=(Button)findViewById(R.id.exitXML);
+        db = new MyHelper(this);
+
+        button = (Button) findViewById(R.id.btn);
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i=new Intent(MainActivity.this,AddActivity.class);
+                Intent i = new Intent(MainActivity.this, AddActivity.class);
                 startActivity(i);
             }
         });
@@ -40,23 +41,16 @@ public class MainActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Contact selected_contact= (Contact) parent.getItemAtPosition(position);
-                Intent intent=new Intent(MainActivity.this,UpdateActivity.class);
-                intent.putExtra("id",selected_contact.getId());
+                Contact selected_contact = (Contact) parent.getItemAtPosition(position);
+                Intent intent = new Intent(MainActivity.this, UpdateActivity.class);
+                intent.putExtra("id", selected_contact.getId());
                 startActivity(intent);
 
 
             }
         });
-ExitJAVA.setOnClickListener(new View.OnClickListener() {
-    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
-    @Override
-    public void onClick(View v) {
-        finishAffinity();
-    }
-});
-    }
 
+    }
     @Override
     protected void onResume() {
         super.onResume();
@@ -66,4 +60,5 @@ ExitJAVA.setOnClickListener(new View.OnClickListener() {
         ContactAdapter adapter=new ContactAdapter(this,contacts);
         listView.setAdapter(adapter);
     }
+
 }
