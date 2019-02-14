@@ -12,6 +12,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -22,7 +23,8 @@ public class UpdateActivity extends AppCompatActivity {
     com.a3non.mynotes.MyHelper db;
     EditText edit1;
     EditText edit2;
-    Button button,ExitubdateJAVA;
+    Button button ;
+    ImageButton ExitubdateJAVA;
     int id;
 
 
@@ -34,7 +36,7 @@ public class UpdateActivity extends AppCompatActivity {
         edit1=findViewById(R.id.editname);
         //edit2=findViewById(R.id.editphone);
         button=findViewById(R.id.btn);
-        ExitubdateJAVA=(Button)findViewById(R.id.exitubdateXML);
+        ExitubdateJAVA=(ImageButton)findViewById(R.id.exitubdateXML);
 
 
         id=getIntent().getIntExtra("id",0);

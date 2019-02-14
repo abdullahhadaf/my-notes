@@ -8,12 +8,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 
 public class AddActivity extends AppCompatActivity {
     EditText edit1;
-    Button button,button2,ExitaddJAVA;
+    Button button,button2;
+    ImageButton ExitaddJAVA;
     MyHelper db;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +25,7 @@ public class AddActivity extends AppCompatActivity {
         //edit2=findViewById(R.id.editphone);
         button=findViewById(R.id.btn);
         button2=findViewById(R.id.aboutXML);
-        ExitaddJAVA=(Button)findViewById(R.id.exitaddXML);
+        ExitaddJAVA=(ImageButton)findViewById(R.id.exitaddXML);
         db =new MyHelper(this);
         button.setOnClickListener(new View.OnClickListener() {
             private int id;

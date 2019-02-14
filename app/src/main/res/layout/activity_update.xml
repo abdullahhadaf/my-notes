@@ -32,17 +32,13 @@
         android:textColor="#fff"
         android:textSize="20sp" />
 
-    <Button
+    <ImageButton
         android:id="@+id/exitubdateXML"
-        android:layout_width="100dp"
+        android:layout_width="50dp"
+        android:layout_gravity="center"
         android:layout_height="50dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginTop="40dp"
-        android:background="@drawable/click_button2"
-        android:text="Exit"
-        android:textStyle="bold"
-        android:layout_gravity="left"
-        android:textColor="@android:color/holo_red_dark"
-        />
+        android:layout_marginTop="70dp"
+        android:background="@color/colortext"
+        app:srcCompat="@drawable/sinn" />
 
 </LinearLayout>
