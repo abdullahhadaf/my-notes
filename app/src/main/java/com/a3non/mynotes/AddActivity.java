@@ -9,25 +9,28 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 
 public class AddActivity extends AppCompatActivity {
+
     EditText edit1;
-    Button button,button2;
-    ImageButton ExitaddJAVA;
+    Button button2;
+    ImageButton  ExitaddJAVA;
+    ImageView ImageViewJAVA;
     MyHelper db;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add);
         edit1=findViewById(R.id.editname);
+        ImageViewJAVA=findViewById(R.id.imageViewXML);
         //edit2=findViewById(R.id.editphone);
-        button=findViewById(R.id.btn);
         button2=findViewById(R.id.aboutXML);
         ExitaddJAVA=(ImageButton)findViewById(R.id.exitaddXML);
         db =new MyHelper(this);
-        button.setOnClickListener(new View.OnClickListener() {
+        ImageViewJAVA.setOnClickListener(new View.OnClickListener() {
             private int id;
 
             @Override

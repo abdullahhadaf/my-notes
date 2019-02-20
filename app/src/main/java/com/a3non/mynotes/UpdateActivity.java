@@ -13,6 +13,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -23,7 +24,7 @@ public class UpdateActivity extends AppCompatActivity {
     com.a3non.mynotes.MyHelper db;
     EditText edit1;
     EditText edit2;
-    Button button ;
+    ImageView ImageViewJAVA;
     ImageButton ExitubdateJAVA;
     int id;
 
@@ -35,7 +36,7 @@ public class UpdateActivity extends AppCompatActivity {
 
         edit1=findViewById(R.id.editname);
         //edit2=findViewById(R.id.editphone);
-        button=findViewById(R.id.btn);
+        ImageViewJAVA =findViewById(R.id.imageView2XML);
         ExitubdateJAVA=(ImageButton)findViewById(R.id.exitubdateXML);
 
 
@@ -45,7 +46,7 @@ public class UpdateActivity extends AppCompatActivity {
         edit1.setText(contact.getName());
         //edit2.setText(contact.getPhone());
 
-        button.setOnClickListener(new View.OnClickListener() {
+        ImageViewJAVA.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String name=edit1.getText().toString();

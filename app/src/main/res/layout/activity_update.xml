@@ -13,6 +13,15 @@
         android:layout_height="350dp"
         android:orientation="vertical">
 
+        <ImageView
+            android:id="@+id/imageView2XML"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="125dp"
+            app:srcCompat="@mipmap/ic_ok_round" />
+
         <EditText
             android:id="@+id/editname"
             android:layout_width="match_parent"
@@ -21,16 +30,7 @@
             android:hint="Enter note name" />
     </LinearLayout>
 
-    <Button
-        android:id="@+id/btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:background="@drawable/click_button"
-        android:text=" OK "
-        android:textAllCaps="false"
-        android:textColor="#fff"
-        android:textSize="20sp" />
+
 
     <ImageButton
         android:id="@+id/exitubdateXML"
@@ -38,8 +38,7 @@
         android:layout_gravity="center"
         android:layout_height="50dp"
         android:layout_marginRight="125dp"
-
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="160dp"
         android:background="@color/colortext"
         app:srcCompat="@drawable/sinn" />
 

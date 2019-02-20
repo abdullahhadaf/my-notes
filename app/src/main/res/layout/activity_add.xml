@@ -13,29 +13,30 @@
         android:layout_width="match_parent"
         android:layout_height="350dp"
         android:orientation="vertical">
-    <EditText
+
+        <ImageView
+            android:id="@+id/imageViewXML"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="125dp"
+            app:srcCompat="@mipmap/ic_ok_round" />
+
+        <EditText
         android:id="@+id/editname"
         android:layout_marginTop="40dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter note"/>
     </LinearLayout>
-    <Button
-        android:id="@+id/btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="0dp"
-        android:background="@drawable/click_button"
-        android:text="Add note"
-        android:textAllCaps="false"
-        android:textColor="#fff"
-        android:textSize="20sp" />
+
     <Button
         android:id="@+id/aboutXML"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="80dp"
         android:background="@drawable/click_button"
         android:text="About"
         android:textAllCaps="false"
