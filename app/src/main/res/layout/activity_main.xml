@@ -16,7 +16,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginTop="40dp"
         android:layout_marginBottom="40dp"
-        android:layout_marginRight="150dp"
+        android:layout_marginRight="40dp"
         android:background="@drawable/click_button2"
         android:paddingTop="1dp"
         android:paddingBottom="1dp"
@@ -24,15 +24,31 @@
         android:textAllCaps="false"
         android:textColor="@color/colortext"
         android:textSize="20dp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
 
+        />
+
+    <ImageButton
+        android:id="@+id/exitactivityXML"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="290dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colortext"
+        app:srcCompat="@drawable/sinn" />
     <ListView
         android:id="@+id/list1"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_above="@id/btn"
         android:background="#E8EAF6"
-        android:paddingTop="10dp"></ListView>
+        android:paddingTop="10dp"
+
+        >
+
+    </ListView>
 
 
 

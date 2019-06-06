@@ -28,7 +28,8 @@
         android:layout_marginTop="40dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter note"/>
+        android:hint="Enter note"
+        android:paddingBottom="40dp"/>
     </LinearLayout>
 
     <Button
@@ -52,7 +53,7 @@
             android:layout_marginRight="125dp"
             android:layout_marginTop="30dp"
             android:background="@color/colortext"
-            app:srcCompat="@drawable/sinn" />
+            app:srcCompat="@drawable/sinn2" />
 
 
 </LinearLayout>

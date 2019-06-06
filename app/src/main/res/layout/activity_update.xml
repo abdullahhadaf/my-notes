@@ -27,19 +27,22 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
-            android:hint="Enter note name" />
+            android:hint="Enter note name"
+            android:paddingBottom="40dp"
+
+            />
     </LinearLayout>
 
 
 
     <ImageButton
-        android:id="@+id/exitubdateXML"
+        android:id="@+id/exitupdateXML"
         android:layout_width="50dp"
         android:layout_gravity="center"
         android:layout_height="50dp"
         android:layout_marginRight="125dp"
         android:layout_marginTop="160dp"
         android:background="@color/colortext"
-        app:srcCompat="@drawable/sinn" />
+        app:srcCompat="@drawable/sinn2" />
 
 </LinearLayout>

@@ -25,7 +25,7 @@ public class UpdateActivity extends AppCompatActivity {
     EditText edit1;
     EditText edit2;
     ImageView ImageViewJAVA;
-    ImageButton ExitubdateJAVA;
+    ImageButton ExitupdateJAVA;
     int id;
 
 
@@ -37,7 +37,7 @@ public class UpdateActivity extends AppCompatActivity {
         edit1=findViewById(R.id.editname);
         //edit2=findViewById(R.id.editphone);
         ImageViewJAVA =findViewById(R.id.imageView2XML);
-        ExitubdateJAVA=(ImageButton)findViewById(R.id.exitubdateXML);
+        ExitupdateJAVA=(ImageButton)findViewById(R.id.exitupdateXML);
 
 
         id=getIntent().getIntExtra("id",0);
@@ -59,7 +59,7 @@ public class UpdateActivity extends AppCompatActivity {
 
             }
         });
-ExitubdateJAVA.setOnClickListener(new View.OnClickListener() {
+ExitupdateJAVA.setOnClickListener(new View.OnClickListener() {
     @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
     @Override
     public void onClick(View v) {
